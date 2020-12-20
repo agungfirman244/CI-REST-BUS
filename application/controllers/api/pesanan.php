@@ -11,10 +11,10 @@ class pesanan extends REST_Controller
     {
         parent::__construct();
         $this->load->model('Pesanan_Model', 'pesanan');
-        $this->methods['index_get']['limit'] = 10;
-        $this->methods['index_delete']['limit'] = 10;
-        $this->methods['index_post']['limit'] = 10;
-        $this->methods['index_put']['limit'] = 10;
+        $this->methods['index_get']['limit'] = 100;
+        $this->methods['index_delete']['limit'] = 100;
+        $this->methods['index_post']['limit'] = 100;
+        $this->methods['index_put']['limit'] = 100;
     }
    
     public function index_get()

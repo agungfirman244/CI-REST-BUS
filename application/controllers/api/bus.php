@@ -11,10 +11,10 @@ class bus extends REST_Controller
     {
         parent::__construct();
         $this->load->model('Bus_Model', 'bus');
-        $this->methods['index_get']['limit'] = 10;
-        $this->methods['index_delete']['limit'] = 10;
-        $this->methods['index_post']['limit'] = 10;
-        $this->methods['index_put']['limit'] = 10;
+        $this->methods['index_get']['limit'] = 1000;
+        $this->methods['index_delete']['limit'] = 1000;
+        $this->methods['index_post']['limit'] = 1000;
+        $this->methods['index_put']['limit'] = 1000;
     }
    
     public function index_get()
